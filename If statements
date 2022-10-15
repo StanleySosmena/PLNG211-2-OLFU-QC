@@ -1,0 +1,458 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/StanleySosmena/PLNG211-2-OLFU-QC/blob/main/If%20statements\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JdpjXL89QnlP",
+        "outputId": "5e0c1fec-1692-403e-c52c-69d455dadef3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a is greater than b\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = 5\n",
+        "b = 3\n",
+        "\n",
+        "if b > a :\n",
+        " print( \"b is greater than a\")\n",
+        "elif a > b:\n",
+        " print( \"a is greater than b\")\n",
+        "else :\n",
+        " print (\"They are both equal\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Short hand if\n",
+        "a = 5\n",
+        "b = 6\n",
+        "\n",
+        "if a > b: print(\"a is greater than b\")\n",
+        "\n",
+        "#short hand if else\n",
+        "\n",
+        "print(\"a is greater than b\") if a>b else print(\"a is less than b\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-XhhztdORCWE",
+        "outputId": "48ea286f-e69e-477a-9871-4e4ce5521b42"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a is less than b\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#And and or statement \n",
+        "a = 5\n",
+        "b = 6\n",
+        "c = 7\n",
+        "\n",
+        "if c >b and b>a:\n",
+        "  print(\"Both operands are true\")\n",
+        "\n",
+        "if c > b or a > b:\n",
+        "  print(\"at least of the operands is TRUE\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OYjmnxWwRt8g",
+        "outputId": "c18ab8c5-1d8b-4b7f-df22-fccc4d16b955"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Both operands are true\n",
+            "at least of the operands is TRUE\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#nested if\n",
+        "x = 100\n",
+        "if x > 10:\n",
+        " print (\"X is greater than all of double numbers around the world\")\n",
+        "if x > 200:\n",
+        " print(\"More than\")\n",
+        "else:\n",
+        " print (\"I cannot na\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1_CWsWXBSKHN",
+        "outputId": "b98c00fb-af25-4d23-dd09-c261e1f67b3e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "X is greater than all of double numbers around the world\n",
+            "I cannot na\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 40\n",
+        "if x >= 18:\n",
+        "  print (\"You are qualified to vote\")\n",
+        "else:\n",
+        "  print (\"You are not qualified to vote\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oMr_h4rmWWcB",
+        "outputId": "de320dfb-a4b1-49b6-9cfb-3c0dabc88c36"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "You are qualified to vote\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"MALE OR FEMALE\")\n",
+        "print(\"Ano ang iyong kasarian?\")\n",
+        "sex = str (input())\n",
+        "\n",
+        "if sex == \"female\":\n",
+        "  print(\"Ikaw ay eabab\")\n",
+        "  if sex == \"male\":\n",
+        "    print(\"Ikaw ay ekalal\")\n",
+        " "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wwzQ6ZdbXuNE",
+        "outputId": "2b223798-c1ce-4488-826b-001e6121b131"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "MALE OR FEMALE\n",
+            "Ano ang iyong kasarian?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "week = [\"Sunday\",\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Saturday\"]\n",
+        "for x in week:\n",
+        "  if x == \"Thursday\":\n",
+        "    print (x)\n",
+        "\n",
+        "week = [\"Sunday\",\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Saturday\"]\n",
+        "for x in week:\n",
+        "    print (x)\n",
+        "    if x == \"Thursday\":\n",
+        "      break"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tRRZJsj5aaSv",
+        "outputId": "6cf0caae-78f8-4e29-e082-9fb1e0e66df0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Thursday\n",
+            "Sunday\n",
+            "Monday\n",
+            "Tuesday\n",
+            "Wednesday\n",
+            "Thursday\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for x in \"Dubidubidapdap\":\n",
+        " print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vs9JSpCIbOwQ",
+        "outputId": "ec2f89f1-0001-47d4-c69a-a21aa77ddead"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "D\n",
+            "u\n",
+            "b\n",
+            "i\n",
+            "d\n",
+            "u\n",
+            "b\n",
+            "i\n",
+            "d\n",
+            "a\n",
+            "p\n",
+            "d\n",
+            "a\n",
+            "p\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Nested loop\n",
+        "Size = [\"Small\",\"Medium\",\"Large\"]\n",
+        "shapes = [\"Square\",\"Triangle\",\"Oblong\"]\n",
+        "\n",
+        "for y in Size:\n",
+        " for x in shapes:\n",
+        "  print(y,x)\n",
+        " "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7Bi7tQTFcFXD",
+        "outputId": "a24dcffa-ede2-40c2-8351-8e67fe99026a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Small Square\n",
+            "Small Triangle\n",
+            "Small Oblong\n",
+            "Medium Square\n",
+            "Medium Triangle\n",
+            "Medium Oblong\n",
+            "Large Square\n",
+            "Large Triangle\n",
+            "Large Oblong\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 1\n",
+        "while i < 6:\n",
+        "  print(i)\n",
+        "  i+=1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zgalFojfdnbj",
+        "outputId": "eefc1b7f-ff1d-465b-c5db-acd9abf5ba1b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 1\n",
+        "while i < 6:\n",
+        "  if i == 3:\n",
+        "    print(i)\n",
+        "    break\n",
+        "  i+=1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NyUkbxHweAA-",
+        "outputId": "8b4040c3-77d3-414d-ce66-da410eeae000"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Else statement\n",
+        "i = 1\n",
+        "while i <= 6:\n",
+        "  print(i)\n",
+        "  i+=1\n",
+        "else:\n",
+        "  print(\"HANGGANG DYAN KA LANG BOI\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yv5UDdykf7Lb",
+        "outputId": "616b873d-1a35-43a6-da1b-e526b0dd32b1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "HANGGANG DYAN KA LANG BOI\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Hello 0 - 10\n",
+        "\n",
+        "hello = [0,1,2,3,4,5,6,7,8,9,10]\n",
+        "for x in hello:\n",
+        "  print(\"Hello numer\", x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hs4LgdI6gmWY",
+        "outputId": "43b1b373-b741-4581-e7e9-6ed402774b7b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello numer 0\n",
+            "Hello numer 1\n",
+            "Hello numer 2\n",
+            "Hello numer 3\n",
+            "Hello numer 4\n",
+            "Hello numer 5\n",
+            "Hello numer 6\n",
+            "Hello numer 7\n",
+            "Hello numer 8\n",
+            "Hello numer 9\n",
+            "Hello numer 10\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
