@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/StanleySosmena/PLNG211-2-OLFU-QC/blob/main/Sosme%C3%B1a%2CStanley_Exercise1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x3xGSszXvIeF",
+        "outputId": "b565963a-db40-49e1-d20d-68b868ad1a4d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the numbers: [26, 49, 98, 87, 62, 75]\n",
+            "these are the odd numbers:\n",
+            "49\n",
+            "87\n",
+            "75\n",
+            "The sum of all Odd numbers: 211\n"
+          ]
+        }
+      ],
+      "source": [
+        "numbers = [26,49,98,87,62,75]\n",
+        "sum=0;\n",
+        "print(\"These are the numbers:\", numbers)\n",
+        "print(\"these are the odd numbers:\")\n",
+        "for x in numbers:\n",
+        "  if (x %2 != 0):\n",
+        "     sum = sum + x\n",
+        "     print(x) \n",
+        "print(\"The sum of all Odd numbers:\",sum)"
+      ]
+    }
+  ]
+}
